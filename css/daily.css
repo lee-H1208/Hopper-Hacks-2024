@@ -4,8 +4,8 @@ body{
 }
 
 #logo{
-    max-height: 10%;
-    max-width: 10%;
+    max-height: 15%;
+    max-width: 15%;
     margin-right: 35px;
     margin-left: 5px;
     float: left;
@@ -14,19 +14,24 @@ body{
 .navbar{
     display:flex;
     font-family: 'Itim', cursive;
-    font-size: 30px; 
+    font-size: 40px; 
     margin:1% 2% 5% 2%;
     justify-content:left;
 }
 .navbar a{
-    margin-top: 25px;
+    margin-top: 50px;
     background-color: #B35252;
     color: white;
-    padding: 15px;
+    padding: 30px;
     padding-top: 5px;
     padding-bottom: 8px;
-    border-radius: 5px;
-    margin-right: 40px;
+    border-radius: 10px;
+    margin-right: 75px;
     text-decoration: none;
 }
-
+.navbar a:hover{
+    background-color: rgb(144, 60, 60);
+}
+.navbar a:active{
+    background-color: rgb(245, 222, 150);
+}
