@@ -1,0 +1,78 @@
+<!-- Include Wit.ai script -->
+<script src="https://cdn.jsdelivr.net/npm/wit-js@1.2.0"></script>
+
+<!-- Your HTML content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Plugin</title>
+</head>
+<body>
+
+<!-- Your website content -->
+
+<!-- AI Assistant Chat Interface -->
+<div id="assistant-container">
+    <div id="chat-window"></div>
+    <input type="text" id="user-input" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</div>
+
+<!-- Your website content -->
+
+<script>
+// Initialize Wit.ai API
+const accessToken = 'YOUR_WIT_AI_ACCESS_TOKEN';
+const client = new Wit(accessToken);
+
+// Chat window elements
+const chatWindow = document.getElementById('chat-window');
+const userInput = document.getElementById('user-input');
+
+// Function to send user message to Wit.ai
+function sendMessage() {
+    const userMessage = userInput.value;
+    
+    // Display user message in the chat window
+    appendMessage('user', userMessage);
+
+    // Send user message to Wit.ai for processing
+    client.message(userMessage)
+        .then((data) => {
+            // Handle Wit.ai response
+            const intent = data.intents[0].name;
+            const entities = data.entities;
+
+            // Implement logic based on the detected intent and entities
+            handleIntent(intent, entities);
+        })
+        .catch((error) => {
+            console.error('Error processing message:', error);
+        });
+
+    // Clear user input
+    userInput.value = '';
+}
+
+// Function to append messages to the chat window
+function appendMessage(sender, message) {
+    const messageElement = document.createElement('div');
+    messageElement.className = sender;
+    messageElement.textContent = message;
+    chatWindow.appendChild(messageElement);
+}
+
+// Function to handle intents and entities
+function handleIntent(intent, entities) {
+    // Implement logic based on detected intent and entities
+    // For simplicity, we'll just display a response in the chat window
+    const response = `AI Assistant: Received intent - ${intent}`;
+    appendMessage('assistant', response);
+}
+
+</script>
+
+</body>
+</html>
