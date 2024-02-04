@@ -23,7 +23,7 @@ class Timer {
       this.el.reset.addEventListener("click", () => {
         const inputMinutes = prompt("Enter number of minutes:");
   
-        if (inputMinutes < 60) {
+        if (inputMinutes <= 60) {
           this.stop();
           this.remainingSeconds = inputMinutes * 60;
           this.updateInterfaceTime();
