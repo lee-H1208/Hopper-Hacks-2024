@@ -4,6 +4,7 @@ body{
 }
 .bigContainer{
     margin: 0 5%;
+    animation: pageTransition .80s;
 }
 
 #logo{
@@ -341,4 +342,16 @@ body{
     left: 45%;
     transform: translateY(-16%);
     transform: translateX(-45%);
+}
+
+@keyframes pageTransition{
+    from{
+        opacity:0;
+        transform: translateX(1vh);
+
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
 }

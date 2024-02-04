@@ -9,6 +9,7 @@ body{
 }
 
 .homeContainer{
+    animation: pageTransition .80s;
     display:flex;
     flex-direction:column;
     width:99%;
@@ -68,3 +69,15 @@ body{
     width: 50px;
 }
 
+
+@keyframes pageTransition{
+    from{
+        opacity:0;
+        transform: translateX(1vh);
+
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}

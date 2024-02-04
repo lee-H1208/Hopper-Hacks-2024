@@ -2,6 +2,9 @@
 body{
     background-color: #F8E8D0;
 }
+.bigContainer{
+    animation: pageTransition .80s;
+}
 
 #logo{
     max-height: 15%;
@@ -86,5 +89,16 @@ button {
     text-align: center;
 }
 
+@keyframes pageTransition{
+    from{
+        opacity:0;
+        transform: translateX(1vh);
+
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
 
 
