@@ -89,9 +89,7 @@ class Timer {
                     </span>
                 </button>
                 <button type="button" class="timer__btn timer__btn--reset">
-                    <span class="setTimer">
-                        <img id = "pauseButtonImg" src = "/imgs/playButton.png"></img>
-                    </span>
+                    <span class="setTimer"><img id = "stopwatchImg"src = "/imgs/stopwatch.png"></span>
                 </button>
             </span>
           `;
