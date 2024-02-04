@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="css/login.css">
 </head>
 
+<body>
+
     <div class="wrapper">
-        <form action ="">
+        <form onsubmit="submitForm(event)">
             <h1>Login</h1>
             <div class="input-box">
-                <input type="text" placeholder="Username" id="email" required>
+                <input class="storage" type="text" placeholder="Username" id="username" required>
             </div>
             <div class="input-box">
                 <input type="password" placeholder="Password" id="password" required>
@@ -22,21 +25,21 @@
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button type="submit" class="button">Login</button>
+            <button>Login</button>
 
             <div class="register-link">
-                <p>Don't have an account?<a href="#">Register</a></p>
+                <p>Don't have an account? <a href="#">Register</a></p>
             </div>
         </form>
-
-        <script>
-            function auth() {
-                
-            }
-        </script>
     </div>
-<body>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); 
+            window.location.href = 'home.html';
+        }
+    </script>
 
 </body>
-    
+
 </html>
