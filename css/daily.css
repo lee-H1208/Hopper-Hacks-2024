@@ -57,6 +57,7 @@ body{
 
     bottom: 4%;
     transform: translateY(4%);
+    margin-bottom: 10%;
 }
 .todoItem{
     width: 306px;
@@ -96,6 +97,8 @@ body{
 
     bottom: 4%;
     transform: translateY(4%);
+
+    margin-bottom: 10%;
 
 }
 .scheItem{
