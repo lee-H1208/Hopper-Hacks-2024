@@ -50,7 +50,7 @@ body{
     grid-auto-flow: column;
     width:1100px;
     height:475px;
-    background-color: #F5DE96;
+    background-color: #A26633;
     border-radius: 20px;
     margin-right:100px;
     font-family: 'Itim', cursive;
@@ -73,8 +73,42 @@ body{
 }
 #pot{
     position: relative;
-    bottom:100px;
-    left:1200px;
+    bottom:105px;
+    left:1317px;
     width:12%;
     height:12%;
+}
+.menu-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    right:1200px;
+    width:225px;
+    height:475px;
+    background-color:#A26633;
+    border-radius: 20px;
+    margin-right:50px;
+}
+.menu-item{
+    position:relative;
+    justify-content: center;
+    margin-left:25px;
+    margin-top:3px;
+}
+#food{
+    width:98%;
+}
+#food1{
+    width:85%;
+}
+#milk{
+    width:85%;
+}
+#egg{
+    width:110%;
+}
+#sushi{
+    width:120%;
+}
+#burger{
+    width:90%;
 }
