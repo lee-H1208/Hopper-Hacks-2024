@@ -90,13 +90,18 @@ body{
     margin-right:50px;
 }
 .menu-item{
+    z-index: 1;
     position:relative;
     justify-content: center;
     margin-left: 7px;
 }
+.dragme{
+    cursor:move;
+}
 #pancake{
-    width:70%;
-    margin-left:5px;
+    width:80%;
+    margin-left:7px;
+    margin-top:5px;
 }
 #bao{
     width:65%;
