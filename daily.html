@@ -17,53 +17,54 @@
         <a href="journal.html" id ="journalLink"> journal </a>
         <a href = "finances.html" id = "finances">finances</a>
     </div>
-    
-    <div class="scheContainer">
-        <div class="scheItem">
-            <h1 id="scheHead">Schedule:</h1>
-            <div class="row2">
-                <input type="text" id="inputSch" placeholder="Add your text">
-                <button onclick="schAdd()" id="butSch">Add</button>
+    <div class = "bigContainer">
+        <div class="scheContainer">
+            <div class="scheItem">
+                <h1 id="scheHead">Schedule:</h1>
+                <div class="row2">
+                    <input type="text" id="inputSch" placeholder="Add your text">
+                    <button onclick="schAdd()" id="butSch">Add</button>
+                </div>
+                <ul class="listSch-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                    <li>Task 5</li>
+                    <li>Task 6</li>
+                    <li>Task 7</li>
+                    <li>Task 8</li> -->
+                </ul>
             </div>
-            <ul class="listSch-container">
-                <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-                <li>Task 4</li>
-                <li>Task 5</li>
-                <li>Task 6</li>
-                <li>Task 7</li>
-                <li>Task 8</li> -->
-            </ul>
         </div>
-    </div>
-    <div class="todoContainer">
-        <div class="todoItem">
-            <h1 id="todoHead">To do:</h1>
-            <div class="row1">
-                <input type="text" id="inputTD" placeholder="Add your text">
-                <button onclick="tdAdd()" id="butTD">Add</button>
+        <div class="todoContainer">
+            <div class="todoItem">
+                <h1 id="todoHead">To do:</h1>
+                <div class="row1">
+                    <input type="text" id="inputTD" placeholder="Add your text">
+                    <button onclick="tdAdd()" id="butTD">Add</button>
+                </div>
+                <ul class="listTD-container">
+                    <!-- <li class="checked">Task 1</li>
+                    <li>Task 2</li>
+                    <li>Task 3</li>
+                    <li>Task 4</li>
+                    <li>Task 5</li>
+                    <li>Task 6</li>
+                    <li>Task 7</li>
+                    <li>Task 8</li> -->
+                </ul>
             </div>
-            <ul class="listTD-container">
-                <!-- <li class="checked">Task 1</li>
-                <li>Task 2</li>
-                <li>Task 3</li>
-                <li>Task 4</li>
-                <li>Task 5</li>
-                <li>Task 6</li>
-                <li>Task 7</li>
-                <li>Task 8</li> -->
-            </ul>
         </div>
-    </div>
-    <br>
-    <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
-    <div id = "weather" class="elfsight-app-1efb431f-b730-453b-b3ae-4185681dcb08" data-elfsight-app-lazy></div>
-    <div id = "moodBar">
-        <h6 id = "moodq">How are you feeling today?</h6>
-        <button id="angyButton" onclick="angyColor()" onmouseover="angyHover()"><img id = "angry" src="imgs/angry.png"></button>
-        <button id="midButton" onclick="midColor()" onmouseover="midHover()"><img id = "mid" src="imgs/mid.png"></button>
-        <button id="happyButton" onclick="happyColor()" onmouseover="happyHover()"><img id = "happy" src="imgs/happy.png"></button>
+        <br>
+        <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+        <div id = "weather" class="elfsight-app-1efb431f-b730-453b-b3ae-4185681dcb08" data-elfsight-app-lazy></div>
+        <div id = "moodBar">
+            <h6 id = "moodq">How are you feeling today?</h6>
+            <button id="angyButton" onclick="angyColor()" onmouseover="angyHover()"><img id = "angry" src="imgs/angry.png"></button>
+            <button id="midButton" onclick="midColor()" onmouseover="midHover()"><img id = "mid" src="imgs/mid.png"></button>
+            <button id="happyButton" onclick="happyColor()" onmouseover="happyHover()"><img id = "happy" src="imgs/happy.png"></button>
+        </div>
     </div>
     <script src="js/daily.js"></script>  
     <script src="js/input.js"></script>  
