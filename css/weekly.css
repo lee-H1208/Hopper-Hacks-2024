@@ -57,7 +57,7 @@ body{
     column-gap: 20px;
 }
 .diary-item{
-    padding:40px;
+    padding:5px 45px 85px;
     top: 6%;
     bottom: 10%;
     height: 70%;
