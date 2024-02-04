@@ -112,6 +112,12 @@ body{
     font-size: 16px;
     font-family: 'Itim', cursive;
 }
+#butTD:hover{
+    background-color: rgb(144, 60, 60);
+}
+#butTD:active{
+    background-color: rgb(144, 60, 60);
+}
 .listTD-container li{
     list-style: none;
     font-size: 17px;
@@ -137,7 +143,11 @@ body{
 .listTD-container li.checked::before{
     background-image: url(../imgs/checked.png);
 }
+
 .scheContainer{
+    position:relative;
+    z-index: 999; 
+    
     width: 350px;
     height: 650px;
 
@@ -177,6 +187,67 @@ body{
     
     bottom: 15%;
     transform: translateY(15%);
+}
+.row2{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5de96;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+}
+#inputSch{
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    background: transparent;
+
+    font-family: 'Itim', cursive;
+}
+#butSch{
+    padding: 16px 25px;
+    border:none;
+    outline:none;
+    background: #B35252;
+    color: #F8E8D0;
+    cursor: pointer;
+    border-radius: 40px;
+
+    font-size: 16px;
+    font-family: 'Itim', cursive;
+}
+#butSch:hover{
+    background-color: rgb(144, 60, 60);
+}
+#butSch:active{
+    background-color: rgb(144, 60, 60);
+}
+.listSch-container li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.listSch-container li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../imgs/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 20px;
+}
+.listSch-container li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.listSch-container li.checked::before{
+    background-image: url(../imgs/checked.png);
 }
 
 #moodBar{
