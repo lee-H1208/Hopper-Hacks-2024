@@ -1,40 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
-body{
-    background-color: #F8E8D0;
-}
-
-#logo{
-    max-height: 15%;
-    max-width: 15%;
-    margin-right: 35px;
-    margin-left: 5px;
-    float: left;
-}
-
-.navbar{
-    display:flex;
-    font-family: 'Itim', cursive;
-    font-size: 40px; 
-    margin:1% 2% 5% 2%;
-    justify-content:left;
-}
-.navbar a{
-    margin-top: 50px;
-    background-color: #B35252;
-    color: white;
-    padding: 30px;
-    padding-top: 5px;
-    padding-bottom: 8px;
-    border-radius: 10px;
-    margin-right: 75px;
-    text-decoration: none;
-}
-.navbar a:hover{
-    background-color: rgb(144, 60, 60);
-}
-.navbar a:active{
-    background-color: rgb(245, 222, 150);
-}
+/* My Starter Template */
 
 *,
 *::before,
@@ -283,4 +247,3 @@ input[class^='btn-']:hover {
   text-decoration: underline;
   text-decoration-color: lightgoldenrodyellow;
 }
-
