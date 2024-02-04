@@ -64,6 +64,12 @@ body{
     position:relative;
     background-color: #F8E8D0;
     border-radius: 10px;
-    
 }
 
+#pot{
+    position: relative;
+    bottom:-220px;
+    right:190px;
+    width:12%;
+    height:12%;
+}
