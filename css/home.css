@@ -20,15 +20,12 @@ body{
     font-family: 'Itim', cursive;
     color: rgb(179, 82, 82);
 
-
-    
 }
 
 #currentDate{
     margin: 50px 0 10px 0;
     font-size:110px;
     text-align:center;
-
 }
 
 #welcome{

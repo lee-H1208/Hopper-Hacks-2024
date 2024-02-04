@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+body{
+    background-color: #F8E8D0;
+    font-family: 'Itim', cursive;
+}
+
+#logo{
+    max-height: 15%;
+    max-width: 15%;
+    margin-right: 35px;
+    margin-left: 5px;
+    float: left;
+}
+
+.navbar{
+    display:flex;
+    font-family: 'Itim', cursive;
+    font-size: 40px; 
+    margin:1% 2% 5% 2%;
+    justify-content:left;
+}
+.navbar a{
+    margin-top: 50px;
+    background-color: #B35252;
+    color: white;
+    padding: 30px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-radius: 10px;
+    margin-right: 75px;
+    text-decoration: none;
+}
+.navbar a:hover{
+    background-color: rgb(144, 60, 60);
+}
+.navbar a:active{
+    background-color: rgb(245, 222, 150);
+}
+
+  
+.timer {
+    display: flex;
+    flex-direction:column;
+
+    padding-left:0;
+    width:100%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+  
+.timer__part {
+    font-size: 280px;
+    font-weight: bold;
+}
+  
+.timer__btn {
+    width: 100px;
+    height: 100px;
+    margin-left: 16px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background: #8208e6;
+    cursor: pointer;
+}
+
+#playButtonImg{
+    width:40px;
+}
+#pauseButtonImg{
+    width:40px;
+}
+
+
+  
+.timer__btn--start {
+    background: #79bb97;
+}
+  
+.timer__btn--stop {
+    background: rgb(144, 60, 60);
+}
+  
