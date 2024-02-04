@@ -16,26 +16,56 @@
         <a href = "finances.html" id = "finances">finances</a>
     </div>
     
-
-    <div class = "balanceContainer">
-        <h1>Total Balance: $1560.83 </h1>
-        <div class = "para">
-            <div class = "remainderCol">
-                <h2 "rowTitle">Left to Spend</h2>
-                <p>$748.50</p>
+    
+    <div class = "finTracker">
+        <div class = "balanceContainer">
+            <h1>Total Balance: $<span id="total-amount">10000</span></h1>
+            <div class = "para">
+                <div class = "remainderCol">
+                    <h2 "rowTitle">Left to Spend</h2>
+                    <p>$<span id="left-to-spend">0</span></p>
+                </div>
+                <div class = "budgetAmt">
+                    <h2 = "rowTitle">Monthly Budget: </h2>
+                    <p>$1000</p>
+                </div> 
             </div>
-            <div class = "budgetAmt">
-                <h2 = "rowTitle">Monthly Budget: </h2>
-                <p> $1060.80</p>
-            </div> 
         </div>
-    </div>
+       
+        
 
-    <div class = "TransactionsContainer">
-        <h2>Source</h2>
-        <h2>Type</h2>
-        <h2>Amount</h2>
+     
 
-    </div>
+
+            <div class="transactionsContainer"> 
+                <h1 id = "transacTitle">Transactions</h1> 
+                        <form id="expense-form"> 
+                            <input type="text"
+                                id="expense-name"
+                                placeholder="Company Name" required /> 
+                            <input type="number"
+                                id="expense-amount"
+                                placeholder="Amount" required /> 
+                            <button type="addButton" id = "addButton"> 
+                                Add
+                            </button> 
+                        </form> 
+                        <div class="expense-table"> 
+                            <table> 
+                                <thead> 
+                                    <tr> 
+                                        <th>Expense</th> 
+                                        <th>Amount</th> 
+                                        <th></th> 
+                                    </tr> 
+                                </thead> 
+                                <tbody id="expense-list"></tbody> 
+                            </table> 
+                               
+                            </div> 
+                        </div> 
+                    </div> 
+                    <script src="/js/test.js"></script> 
+        
 </body>
 </html>
