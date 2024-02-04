@@ -34,7 +34,7 @@ body{
     background-color: rgb(144, 60, 60);
 }
 .navbar a:active{
-    background-color: #f5de96;
+    background-color: rgb(245, 222, 150);
 }
 
 #weather{
@@ -44,12 +44,14 @@ body{
 }
 
 .todoContainer{
+    position:relative;
+    z-index: 999; 
     width: 350px;
     height: 650px;
 
     font-family: 'Itim', cursive;
     color: #B35252;
-
+    
     border-radius: 25px;
 
     float: right;
@@ -61,6 +63,7 @@ body{
     margin-bottom: 10%;
 }
 .todoItem{
+    z-index: 999;
     width: 306px;
     height: 610px;
 
@@ -74,13 +77,66 @@ body{
 #todoHead{
     margin-left: 25px;
     width:100px;
-    height:100px;
+    height:40px;
 
     bottom: 15%;
     transform: translateY(15%);
 }
+.row1{
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5de96;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 30px;
+}
+#inputTD{
+    border: none;
+    outline: none;
+    margin-left: 10%;
+    background: transparent;
 
+    font-family: 'Itim', cursive;
+}
+#butTD{
+    padding: 16px 25px;
+    border:none;
+    outline:none;
+    background: #B35252;
+    color: #F8E8D0;
+    cursor: pointer;
+    border-radius: 40px;
 
+    font-size: 16px;
+    font-family: 'Itim', cursive;
+}
+.listTD-container li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+}
+.listTD-container li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(../imgs/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    left: 20px;
+}
+.listTD-container li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+.listTD-container li.checked::before{
+    background-image: url(../imgs/checked.png);
+}
 .scheContainer{
     width: 350px;
     height: 650px;
@@ -89,6 +145,7 @@ body{
     color: #B35252;
 
     border-radius: 25px;
+
 
     float: right;
     
@@ -100,7 +157,6 @@ body{
     transform: translateY(4%);
 
     margin-bottom: 10%;
-
 }
 .scheItem{
     width: 306px;
@@ -116,8 +172,9 @@ body{
 #scheHead{
     margin-left: 25px;
     width:100px;
-    height:100px;
+    height:40px;
 
+    
     bottom: 15%;
     transform: translateY(15%);
 }
