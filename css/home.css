@@ -13,7 +13,7 @@ body{
     flex-direction:column;
     width:99%;
 
-    padding-top: 20px;
+    padding-top: 0px;
     align-items: center;
     justify-content:center;
 
@@ -23,7 +23,7 @@ body{
 }
 
 #currentDate{
-    margin: 50px 0 10px 0;
+    margin: 35px 0 10px 0;
     font-size:110px;
     text-align:center;
 }
