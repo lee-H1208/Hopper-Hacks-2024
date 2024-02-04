@@ -81,6 +81,7 @@ body{
 .menu-container{
     display: grid;
     grid-template-columns: auto auto;
+    row-gap: 1px;
     right:1200px;
     width:225px;
     height:475px;
@@ -91,24 +92,42 @@ body{
 .menu-item{
     position:relative;
     justify-content: center;
-    margin-left:25px;
-    margin-top:3px;
+    margin-left: 7px;
 }
-#food{
-    width:98%;
+#pancake{
+    width:70%;
+    margin-left:5px;
 }
-#food1{
-    width:85%;
+#bao{
+    width:65%;
+    margin-left:15px;
 }
 #milk{
-    width:85%;
+    width:70%;
 }
 #egg{
     width:110%;
+    margin-top:20px;
+    margin-left:-18px;
+    margin-top:0px;
+}
+#yogurt{
+    width:95%;
+    margin-top:-13px;
 }
 #sushi{
     width:120%;
+    margin-top: -20px;
+    margin-left:-5px;
+}
+#ramen{
+    margin-left:-13px;
+    margin-top:-20px;
 }
 #burger{
     width:90%;
+    margin-top: -10px;
+}
+#pizza{
+    margin-top: -10px;
 }
