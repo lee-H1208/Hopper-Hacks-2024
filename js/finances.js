@@ -21,7 +21,7 @@ function renderExpenses() {
 	expenseList.innerHTML = ""; 
 
 	// Initialize total amount 
-	let totalAmount = 10000; 
+	let totalAmount = 0; 
     let leftToSpend = 0;
 
     
@@ -38,7 +38,7 @@ function renderExpenses() {
 		expenseList.appendChild(expenseRow); 
 
 		// Update total amount 
-		totalAmount -= expense.amount;    
+		totalAmount += expense.amount;    
 	} 
     
     

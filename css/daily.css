@@ -225,6 +225,9 @@ body{
     background-color: rgb(144, 60, 60);
 }
 .listSch-container li{
+    color:#B35252;
+    position: relative;
+    z-index: 0;
     list-style: none;
     font-size: 17px;
     padding: 12px 8px 12px 20px;
@@ -233,7 +236,6 @@ body{
 }
 .listSch-container li::before{
     content: '';
-    position: absolute;
     height: 28px;
     width: 28px;
     border-radius: 50%;
@@ -247,6 +249,9 @@ body{
     text-decoration: line-through;
 }
 .listSch-container li.checked::before{
+    color:#B35252;
+    position: relative;
+    z-index: 0;
     background-image: url(../imgs/checked.png);
 }
 

@@ -18,7 +18,7 @@ function schAdd() {
     if(inputSchBox.value === '') {
         alert("You must write something.");
     } else {
-        let li = document.createElement('li');
+        let li = document.createElement("li");
         li.innerHTML = inputSchBox.value;
         listSch.appendChild(li);
     }
