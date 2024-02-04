@@ -38,7 +38,6 @@ body{
 .big-container{
     display:flex;
     z-index: 2;
-
     justify-content: center;
     width:100%;
     align-items: center;
@@ -54,12 +53,12 @@ body{
     border-radius: 20px;
     margin-right:100px;
     font-family: 'Itim', cursive;
-    font-size: 20px;
+    font-size: 25px;
     color:#B35252;
     column-gap: 20px;
 }
 .diary-item{
-    padding:5px 45px 85px;
+    padding:5px 42px 85px;
     top: 6%;
     bottom: 10%;
     height: 70%;
@@ -74,7 +73,7 @@ body{
 #pot{
     position: relative;
     bottom:100px;
-    left:1100px;
+    left:1200px;
     width:12%;
     height:12%;
 }
