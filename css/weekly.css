@@ -27,7 +27,7 @@ body{
     padding-top: 5px;
     padding-bottom: 8px;
     border-radius: 10px;
-    margin-right: 75px;
+    margin-right: 55px;
     text-decoration: none;
 }
 .navbar a:hover{
@@ -36,6 +36,7 @@ body{
 .navbar a:active{
     background-color: rgb(245, 222, 150);
 }
+
 .big-container{
     display:flex;
     z-index: 2;
