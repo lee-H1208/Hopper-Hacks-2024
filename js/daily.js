@@ -6,7 +6,7 @@ function angyColor(){
     if(angy.style.backgroundColor != "transparent") {
         angy.style.backgroundColor = "transparent";
     } else {
-        angy.style.backgroundColor = "#F8E8D0";
+        angy.style.backgroundColor = "#F5DE96";
     }
 }
 function angyHover() {
@@ -17,7 +17,7 @@ function midColor(){
     if(mid.style.backgroundColor != "transparent") {
         mid.style.backgroundColor = "transparent";
     } else {
-        mid.style.backgroundColor = "#F8E8D0";
+        mid.style.backgroundColor = "#F5DE96";
     }
 }
 function midHover() {
@@ -28,7 +28,7 @@ function happyColor(){
     if(happy.style.backgroundColor != "transparent") {
         happy.style.backgroundColor = "transparent";
     } else {
-        happy.style.backgroundColor = "#F8E8D0";
+        happy.style.backgroundColor = "#F5DE96";
     }
 }
 function happyHover() {
