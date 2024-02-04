@@ -35,15 +35,6 @@ body{
 .navbar a:active{
     background-color: rgb(245, 222, 150);
 }
-body {
-    font-family: 'Space Mono', monospace;
-    line-height: 1.6;
-    background: rgba(175, 238, 238, 0.3);
-    color: lightcoral;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 900px;
-  }
 header{
     text-align: center;
     margin: 16px auto;
