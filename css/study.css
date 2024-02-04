@@ -40,10 +40,12 @@ body{
 
   
 .timer {
+    margin-top:0;
     display: flex;
     flex-direction:column;
 
-    padding-left:0;
+    padding:0;
+    line-height: .8;
     width:100%;
 
     align-items: center;
@@ -54,10 +56,14 @@ body{
 
   
 .timer__part {
-    font-size: 280px;
+    font-size: 350px;
     font-weight: bold;
+    color:rgba(130,92,72, .30);
+
 }
   
+
+
 .timer__btn {
     width: 100px;
     height: 100px;
@@ -65,14 +71,19 @@ body{
     border-radius: 50%;
     border: none;
     color: white;
-    background: #8208e6;
+    background: rgb(128, 103, 84);
     cursor: pointer;
+
+    margin-top: 30%;
 }
 
 #playButtonImg{
     width:40px;
 }
 #pauseButtonImg{
+    width:40px;
+}
+#stopwatchImg{
     width:40px;
 }
 
