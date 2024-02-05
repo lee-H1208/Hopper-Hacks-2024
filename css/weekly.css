@@ -72,7 +72,7 @@ body{
     column-gap: 20px;
 }
 .diary-item{
-    padding:5px 42px 85px;
+    padding:5px 38px 85px;
     top: 6%;
     bottom: 10%;
     height: 70%;
@@ -87,7 +87,7 @@ body{
 #pot{
     position: relative;
     bottom:105px;
-    left:1317px;
+    left:1200px;
     width:12%;
     height:12%;
 }
@@ -100,7 +100,7 @@ body{
     height:475px;
     background-color:#A26633;
     border-radius: 20px;
-    margin-right:50px;
+    margin-right:30px;
 }
 .menu-item{
     z-index: 1;

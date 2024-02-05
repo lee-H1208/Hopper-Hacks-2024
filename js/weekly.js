@@ -16,10 +16,10 @@ document.addEventListener("mouseup",()=>{
 });*/
 
 var drag;
-let offsetX, offsetY;
+//let offsetX, offsetY;
 function dragMove(id){
-    var element = document.getElementsByClassName("menu-item");
-    element.style="absolute";
+    var element = document.getElementById("milk");
+    element.style.position="absolute";
     element.onmousedown=function(){
         drag=element;
     }
