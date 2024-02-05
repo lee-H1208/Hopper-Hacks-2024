@@ -16,9 +16,10 @@ document.addEventListener("mouseup",()=>{
 });*/
 
 var drag;
+let offsetX, offsetY;
 function dragMove(id){
-    var element = document.getElementById("pancake");
-    element.style.position="absolute";
+    var element = document.getElementsByClassName("menu-item");
+    element.style="absolute";
     element.onmousedown=function(){
         drag=element;
     }
